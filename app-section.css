@@ -1,0 +1,117 @@
+.app-section{
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-section .phone-image{
+    position: relative;
+    max-width: 100%;
+    width: 25rem;
+    height: 45rem;
+    overflow: hidden;
+}
+.app-section .phone-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.app-section  .app-content{
+    display: flex;
+    align-items: center;
+}
+
+.app-heading{
+    color: black;
+    margin: 0px 0px 1.5rem;
+    font-weight: 500;
+    font-size: 4.4rem;
+    line-height: 5.6rem;
+
+}
+
+.app-description{
+    font-size: inherit;
+    color: black;
+    margin: 0px 0px 2.5rem;
+    width: 100%;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+input[type="radio"] {
+    accent-color: red;
+    cursor: pointer;
+}
+
+
+.app-options
+{
+    justify-content: space-between;
+    width: 50%;
+
+}
+.app-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.6rem;
+    height: 4rem;
+}
+
+.email-input {
+    display: flex;
+    margin-bottom:1rem;
+    gap: 10px;
+}
+
+input[type="email"] {
+    height: 4.8rem;
+    padding: 1.3rem 1.2rem;
+    background: white;
+    border: 0.1rem solid rgb(207, 207, 207);
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border-radius: 0.6rem;
+    color: rgb(28, 28, 28);
+    font-weight: 200;
+}
+
+.email-input button{
+    background-color: red;
+    color: white;
+    border: none;
+    min-width: 15rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    padding: 0 1.6rem;
+    transition: 0.3s all;
+}
+
+.email-input button:hover
+{
+    background-color: rgb(242, 60, 72);
+}
+
+.store-description{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0px 0px 1.5rem;
+    color: rgb(156, 156, 156);
+}
+.store-button{
+    gap: 8px;
+}
+
+.store-button img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 13.7rem;
+    height: 4rem;
+    cursor: pointer;
+}
