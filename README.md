@@ -16,4 +16,4 @@ ORDER OF FILES TO UNDERSTAND THE CODE:
     - localities.css
     - app-section.css
     - explore-option.css
-At last footer.css (Contains Footer Styling).
+8.At last footer.css (Contains Footer Styling).
