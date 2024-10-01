@@ -18,3 +18,4 @@ ORDER OF FILES TO UNDERSTAND THE CODE:
     - app-section.css
     - explore-option.css
 8. At last footer.css (Contains Footer Styling).
+.
