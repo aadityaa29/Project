@@ -1,0 +1,710 @@
+<!--
+===============================================================
+    Project: Zomato Clone - Web Development Project
+    Author: ADITYA PACHOURI
+    Date: 28-08-2024
+    Description:
+        This web development project was built using [HTML/CSS/JavaScript/Frameworks].
+        It demonstrates the following key features:
+        - Dynamic content manipulation using JavaScript for enhanced user interactivity.
+        - Modern CSS styling techniques, including Flexbox and other for layout structure.
+        - Integration of external libraries/frameworks.
+
+        The project was developed from scratch, and all aspects of frontend
+        and backend (if applicable) are designed, coded, and tested by me.
+        This project highlights my understanding of web design principles,
+        programming, and user experience (UX) best practices.
+===============================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zomato.com</title>
+    <link rel="icon" href="./All Images/Landing Page Images/zpmato-icon.png" />
+    <link rel="stylesheet" href="./Landing Pages/zomato.css" />
+    <link rel="stylesheet" href="./Landing Pages/nav.css" />
+    <link rel="stylesheet" href="./Landing Pages/top.css" />
+    <link rel="stylesheet" href="./Landing Pages/main.css" />
+    <link rel="stylesheet" href="./Landing Pages/options.css" />
+    <link rel="stylesheet" href="./Landing Pages/collections.css" />
+    <link rel="stylesheet" href="./Landing Pages/localities.css" />
+    <link rel="stylesheet" href="./Landing Pages/app-section.css" />
+    <link rel="stylesheet" href="./Landing Pages/explore.css" />
+    <link rel="stylesheet" href="./Landing Pages/footer.css" />
+    <!-- External -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="nav-element">
+            <i data-feather="smartphone"></i>
+            <a href="#">Get the App</a>
+          </div>
+        </div>
+        <div class="nav-right">
+          <div class="nav-element"><a href="#">Investor Relation</a></div>
+          <div class="nav-element"><a href="#">Add Restraunt</a></div>
+          <div class="nav-element">
+            <a href="./Login/login.html">Login</a>
+          </div>
+          <div class="nav-element">
+            <a href="./Login/login.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="top">
+        <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg" alt="bg-img" class="bg-image" />
+        <div class="center-content">
+          <img src="./All Images/Landing Page Images/crave-cart-logo (1).png" alt="logo" class="main-logo" />
+          <h1>
+            Discover the best food & drinks in
+            <span class="city">Delhi NCR</span>
+          </h1>
+          <div class="search-container row">
+            <div class="location">
+              <i data-feather="map-pin"></i>
+              <input
+                placeholder="JIIT Gate 2 Sector 62, Noida"
+                class="location-input"
+              />
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="line"></div>
+            <div class="search">
+              <div class="search-icon">
+                <i data-feather="search"></i>
+              </div>
+              <input
+                placeholder="Search for a restaurent, cusine or a dish"
+                class="search-box"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-body">
+        <div class="options">
+          <div class="option">
+            <div class="image">
+              <img src="./All Images/Landing Page Images/option-img1.jpeg" alt="image1" />
+            </div>
+            <div class="info">
+              <div class="a-contain">
+                <a href="./Order Pages/orderPage.html">
+              <div class="info-title">Order Online</div>
+              <div class="info-description">
+                Stay home and order to your doorstep
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+
+          <div class="option">
+            <div class="image">
+              <img src="./All Images/Landing Page Images/option-img2.jpeg" alt="image1" />
+            </div>
+            <div class="info">
+              <div class="info-title">Dining</div>
+              <div class="info-description">
+                View the city's favourite dining venues
+              </div>
+            </div>
+          </div>
+
+          <div class="option">
+            <div class="image">
+              <img src="./All Images/Landing Page Images/option-img3.jpeg" alt="image1" />
+            </div>
+            <div class="info">
+              <div class="info-title">Nightlife and Clubs</div>
+              <div class="info-description">
+                Explore the city's top nightlife outlets
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collections">
+          <h2 class="heading-2">Collections</h2>
+          <div class="collection-desc">
+            <h6 class="heading-6">
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Delhi NCR, based on trends
+            </h6>
+            <a class="see-more" href="#"
+              >All Collections in Delhi NCR
+              <i data-feather="chevron-right"></i>
+            </a>
+          </div>
+          <div class="collections-list">
+            <div class="collection">
+              <div class="image">
+                <img src="./All Images/Landing Page Images/collection-img1.jpeg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  12 Best Bars & Pubs
+                  <div class="places">
+                    8 Places
+                    <i data-feather="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="collection">
+              <div class="image">
+                <img src="./All Images/Landing Page Images/collection-2.jpg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  9 Great Cafes
+                  <div class="places">
+                    13 Places
+                    <i data-feather="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="collection">
+              <div class="image">
+                <img src="./All Images/Landing Page Images/collection-3.jpeg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  10 Classic Biryani Places
+                  <div class="places">
+                    9 Places
+                    <i data-feather="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="collection">
+              <div class="image">
+                <img src="./All Images/Landing Page Images/collection-4.jpg" alt="" />
+              </div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  6 Best Luxry Dining Places
+                  <div class="places">
+                    6 Places
+                    <i data-feather="chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="localities">
+          <div class="title">
+            Popular localities in and around <span class="city">Delhi NCR</span>
+          </div>
+
+          <div class="localities-list">
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Connaught Place</div>
+                <div class="places">252 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">DLF Phase 4</div>
+                <div class="places">238 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Golf Course Road</div>
+                <div class="places">169 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Sector 29</div>
+                <div class="places">150 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Sector 18, Noida</div>
+                <div class="places">236 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Rajouri Garden</div>
+                <div class="places">402 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">Saket</div>
+                <div class="places">358 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality row">
+              <div class="left">
+                <div class="locality-title">DLF Cyber CIty</div>
+                <div class="places">162 Places</div>
+              </div>
+              <div class="right">
+                <i data-feather="chevron-right"></i>
+              </div>
+            </div>
+
+            <div class="locality">
+              <div class="center">
+                See More
+                <i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="app-section">
+        <div class="app-content">
+            <div class="phone-image">
+                <img src="./All Images/Landing Page Images/side-phone-img.png" alt="phone-img" />
+            </div>
+            <div class="app-info">
+                <div class="app-heading">Get the Crave Cart app</div>
+                <div class="app-description">
+                    We will send you a link, open it on your phone to download the app
+                </div>
+    
+                <!-- Form for collecting email/phone input -->
+                <form id="appLinkForm">
+                    <div class="app-options row">
+                        <div class="app-option">
+                            <input type="radio" id="email" name="options" checked required/>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="app-option">
+                            <input type="radio" id="phone" name="options" required/>
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+    
+                    <div class="email-input row">
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            id="email-input"
+                            required
+                        />
+                        <button type="submit">Share App link</button>
+                    </div>
+                </form>
+    
+                <div class="store">
+                    <div class="store-description">Download app from</div>
+                    <div class="store-button row">
+                        <img
+                            src="./All Images/Landing Page Images/app-store-img.png"
+                            alt="apple-store"
+                        />
+                        <img
+                            src="./All Images/Landing Page Images/play-store-img.png"
+                            alt="play-store"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+      <section class="explore-options">
+        <div class="explore-heading">Explore options near me</div>
+        <div class="accordions-list">
+          <div class="accordion">
+            <div class="accordion-container">
+              <div class="accordion-title">Popular Cusine Near Me</div>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="accordion-data">
+              <ul>
+                <li>Bakery food near me</li>
+                <span class="small-circle"></span>
+                <li>Beverages food near me</li>
+                <span class="small-circle"></span>
+                <li>Biryani food near me</li>
+                <span class="small-circle"></span>
+                <li>Burger food near me</li>
+                <span class="small-circle"></span>
+                <li>Chinese food near me</li>
+                <span class="small-circle"></span>
+                <li>Continental near me</li>
+                <span class="small-circle"></span>
+                <li>Desserts food near me</li>
+                <span class="small-circle"></span>
+                <li>Italian food near me</li>
+                <span class="small-circle"></span>
+                <li>Kebab food near me</li>
+                <span class="small-circle"></span>
+                <li>Mithai food near me</li>
+                <span class="small-circle"></span>
+                <li>Momos food near me</li>
+                <span class="small-circle"></span>
+                <li>Mughlai food near me</li>
+                <span class="small-circle"></span>
+                <li>North Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Pasta food near me</li>
+                <span class="small-circle"></span>
+                <li>Pizza food near me</li>
+                <span class="small-circle"></span>
+                <li>Rolls food near me</li>
+                <span class="small-circle"></span>
+                <li>Sandwich food near me</li>
+                <span class="small-circle"></span>
+                <li>Shake food near me</li>
+                <span class="small-circle"></span>
+                <li>South Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Street food near me</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+              <div class="accordion-title">Popular Restraunt Types Near Me</div>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="accordion-data">
+              <ul>
+                <li>Bakery food near me</li>
+                <span class="small-circle"></span>
+                <li>Beverages food near me</li>
+                <span class="small-circle"></span>
+                <li>Biryani food near me</li>
+                <span class="small-circle"></span>
+                <li>Burger food near me</li>
+                <span class="small-circle"></span>
+                <li>Chinese food near me</li>
+                <span class="small-circle"></span>
+                <li>Continental near me</li>
+                <span class="small-circle"></span>
+                <li>Desserts food near me</li>
+                <span class="small-circle"></span>
+                <li>Italian food near me</li>
+                <span class="small-circle"></span>
+                <li>Kebab food near me</li>
+                <span class="small-circle"></span>
+                <li>Mithai food near me</li>
+                <span class="small-circle"></span>
+                <li>Momos food near me</li>
+                <span class="small-circle"></span>
+                <li>Mughlai food near me</li>
+                <span class="small-circle"></span>
+                <li>North Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Pasta food near me</li>
+                <span class="small-circle"></span>
+                <li>Pizza food near me</li>
+                <span class="small-circle"></span>
+                <li>Rolls food near me</li>
+                <span class="small-circle"></span>
+                <li>Sandwich food near me</li>
+                <span class="small-circle"></span>
+                <li>Shake food near me</li>
+                <span class="small-circle"></span>
+                <li>South Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Street food near me</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+              <div class="accordion-title">Top Restraunt Chains</div>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="accordion-data">
+              <ul>
+                <li>Bakery food near me</li>
+                <span class="small-circle"></span>
+                <li>Beverages food near me</li>
+                <span class="small-circle"></span>
+                <li>Biryani food near me</li>
+                <span class="small-circle"></span>
+                <li>Burger food near me</li>
+                <span class="small-circle"></span>
+                <li>Chinese food near me</li>
+                <span class="small-circle"></span>
+                <li>Continental near me</li>
+                <span class="small-circle"></span>
+                <li>Desserts food near me</li>
+                <span class="small-circle"></span>
+                <li>Italian food near me</li>
+                <span class="small-circle"></span>
+                <li>Kebab food near me</li>
+                <span class="small-circle"></span>
+                <li>Mithai food near me</li>
+                <span class="small-circle"></span>
+                <li>Momos food near me</li>
+                <span class="small-circle"></span>
+                <li>Mughlai food near me</li>
+                <span class="small-circle"></span>
+                <li>North Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Pasta food near me</li>
+                <span class="small-circle"></span>
+                <li>Pizza food near me</li>
+                <span class="small-circle"></span>
+                <li>Rolls food near me</li>
+                <span class="small-circle"></span>
+                <li>Sandwich food near me</li>
+                <span class="small-circle"></span>
+                <li>Shake food near me</li>
+                <span class="small-circle"></span>
+                <li>South Indian food near me</li>
+                <span class="small-circle"></span>
+                <li>Street food near me</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-container">
+              <div class="accordion-title">Cities We Deliver To</div>
+              <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="accordion-data">
+              <ul>
+                <ul>
+                  <li>DelhiNCR</li>
+                  <li>Kolkata Mumbai</li>
+                  <li>Bengaluru</li>
+                  <li>Pune</li>
+                  <li>Hyderabad</li>
+                  <li>Chennai</li>
+                  <li>Lucknow</li>
+                  <li>Kochi</li>
+                  <li>Jaipur</li>
+                  <li>Ahmedabad</li>
+                  <li>Chandigarh</li>
+                  <li>GoaIndore</li>
+                  <li>Gangtok</li>
+                  <li>Nashik</li>
+                  <li>Ooty</li>
+                  <li>Shimla</li>
+                  <li>Ludhiana</li>
+                  <li>Guwahati</li>
+                  <li>Amritsar</li>
+                  <li>Kanpur</li>
+                  <li>Allahabad</li>
+                  <li>Aurangabad</li>
+                  <li>Bhopal</li>
+                  <li>Ranchi</li>
+                  <li>Visakhapatnam</li>
+                  <li>Bhubaneswar</li>
+                  <li>Coimbatore</li>
+                  <li>Mangalore</li>
+                  <li>Vadodara</li>
+                  <li>NagpurAgra</li>
+                  <li>Dehradun</li>
+                  <li>Mysore</li>
+                  <li>Puducherry</li>
+                  <li>SuratVaranasi</li>
+                  <li>Patna</li>
+                  <li>Udaipur</li>
+                  <li>Srinagar</li>
+                  <li>Khajuraho</li>
+                  <li>Neemrana</li>
+                  <li>Cuttack</li>
+                  <li>Trivandrum</li>
+                  <li>Haridwar</li>
+                  <li>Leh</li>
+                  <li>Pushkar</li>
+                  <li>Rajkot</li>
+                  <li>Madurai</li>
+                  <li>Kozhikode</li>
+                  <li>Alappuzha</li>
+                  <li>Thrissur</li>
+                  <li>Manipal</li>
+                  <li>Vijayawada</li>
+                  <li>Jodhpur</li>
+                  <li>Kota</li>
+                  <li>Ajmer</li>
+                  <li>Mussoorie</li>
+                  <li>Rishikesh</li>
+                  <li>Jalandhar</li>
+                  <li>Jammu</li>
+                  <li>Manali</li>
+                  <li>etc.</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-data">
+          <div class="top-section row">
+            <img
+              src="./All Images/Landing Page Images/crave-cart-logo (1).png"
+              alt="zomato-logo"
+            />
+            <div class="dropdowns row">
+              <div class="dropdown row">
+                <img src="./All Images/Landing Page Images/india-flag.png" alt="INDIA-img" />
+                <div class="dropdown-text">India</div>
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="dropdown row">
+                <i data-feather="globe"></i>
+                <div class="dropdown-text">English</div>
+                <i data-feather="chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="middle-section row">
+            <div class="footer-links">
+              <h6 class="footer-title">About Crave Cart</h6>
+              <ul>
+                <li>Who we are</li>
+                <li>Blog</li>
+                <li>Work with us</li>
+                <li>Investor Relations</li>
+                <li>Report Fraud</li>
+                <li>Contact us</li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h6 class="footer-title">crave verse</h6>
+              <ul>
+                <li>Crave Cart</li>
+                <li>Blinkit</li>
+                <li>Feeding India</li>
+                <li>Hyperpure</li>
+                <li>Zomaland</li>
+              </ul>
+            </div>
+
+            <div class="footer-links column">
+              <div class="footer-links">
+                <h6 class="footer-title">For Restaurants</h6>
+                <ul>
+                  <li>Partner With Us</li>
+                  <li>Apps for you</li>
+                </ul>
+              </div>
+
+              <div class="footer-links">
+                <h6 class="footer-title">For Enterprises</h6>
+                <ul>
+                  <li>Zomato For Enterprises</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <h6 class="footer-title">Learn more</h6>
+              <ul>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h6 class="footer-title">Social Links</h6>
+              <div class="socials">
+                <ul class="row">
+                  <li><i class="fa fa-linkedin"></i></li>
+                  <li><i class="fa fa-instagram"></i></li>
+                  <li><i class="fa fa-twitter"></i></li>
+                  <li><i class="fa fa-youtube"></i></li>
+                  <li><i class="fa fa-facebook"></i></li>
+                </ul>
+              </div>
+              <div class="buttons column">
+                <img
+                  src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png"
+                />
+                <img
+                  src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png"
+                />
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+
+          <div class="end-section">
+            By continuing past this page, you agree to our Terms of Service,
+            Cookie Policy, Privacy Policy and Content Policies. All trademarks
+            are properties of their respective owners. 2008-2024 © <strong>Crave Cart™ Ltd.</strong> 
+            All rights reserved.
+          </div>
+
+          <div class="end-section">
+            <strong>Made By: ADITYA PACHOURI</strong>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Internal -->
+    <script src="./Landing Pages/accordion.js"></script>
+    <script src="./Landing Pages/app_validation.js"></script>
+    <!-- External -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script> feather.replace(); </script>
+
+    </body>
+</html>

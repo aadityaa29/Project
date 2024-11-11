@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <!-- icon -->
+    <link rel="icon" href="../All Images/Landing Page Images/zpmato-icon.png">
+
+    <link rel="stylesheet" href="../Landing Pages/zomato.css" />
+    <link rel="stylesheet" href="./orderpage.css" />
+    <link rel="stylesheet" href="./orderpages_card.css">
+    <link rel="stylesheet" href="./orderpage_menu.css">
+    <link rel="stylesheet" href="./orderpageslider.css">
+    <link rel="stylesheet" href="./order_live-heading.css">
+    <link rel="stylesheet" href="./restaurant.css">
+    <link rel="stylesheet" href="./loading.css">
+
+    <!-- Outside -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+     <!-- Loading Screen -->
+     <div id="loading-screen" class="loading-screen">
+      <div class="spinner"></div>
+      <h2>Loading...</h2> 
+    </div>
+
+    <div class="nav-contain">
+        <div class="nav-logo">
+          <a href="../index.html"><img
+            src="../All Images/Landing Page Images/crave-cart-logo (1).png"
+            alt="zomato-logo"
+          /></a>
+        </div>
+        <div class="search-container row">
+          <div class="location">
+            <i data-feather="map-pin"></i>
+            <input
+              placeholder="JIIT Gate 2 Sector 62, Noida"
+              class="location-input"
+            />
+            <i data-feather="chevron-down"></i>
+          </div>
+          <div class="line"></div>
+          <div class="search">
+            <div class="search-icon">
+              <i data-feather="search"></i>
+            </div>
+            <input
+              placeholder="Search for a restaurent, cusine or a dish"
+              class="search-box"
+            />
+          </div>
+        </div>
+        <div class="log-conatin">
+          <div class="nav-element">
+            <a href="../Login/login.html">Login</a>
+          </div>
+          <div class="nav-element">
+            <a href="../Login/login.html">Sign Up</a>
+          </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="top-line row">
+            <a href="#">Home</a>
+            <p>/</p>
+            <a href="#">India</a>
+            <p>/</p>
+            <a href="#">Delhi</a>
+            <p>/</p>
+            <a class="last-a" href="#">Tehsil Compound, SDM Colony, Sikandrabad Restaurants</a>
+            </div>
+        </div>
+
+        <div class="btn row">
+            <button class="btn1 "> All</button>
+            <button class="btn1"> Breakfast</button>
+            <button class="btn1">  Lunch</button>
+            <button class="btn1"> Snacks</button>
+            <button class="btn1">  Dinner</button>
+        </div>
+
+        <section class="hero-banner"> 
+          <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="../All Images/Order Page Images/Add a heading (1).png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="../All Images/Order Page Images/Add a heading.png" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="../All Images/Order Page Images/Add a heading (3).png" alt="Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        </section>
+
+        <section class="menu-hero">
+          <div class="items">
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMyzfmXp2bWMGCMLw2JC4uXpXR1qEGTCBvw&s" alt="">
+              <div class="text">Burger</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQinmEv5XZiGP4mswRgnY3gWATSd09sYzdKMQ&s" alt="">
+              <div class="text">Pav Bhaji</div>
+            </div>
+
+            <div class="item">
+              <img src="https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?semt=ais_hybrid" alt="">
+              <div class="text">Noodles</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGnAPWCpa7cRiRop_FCgv7_i0gu5z-MxtKQ&s" alt="">
+              <div class="text">Fries</div>
+            </div>
+
+            <div class="item">
+              <img src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg" alt="">
+              <div class="text">Pizza</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvsKaj3T9QM2Vew6zplc6l6psaaS3v5trfg&s" alt="">
+              <div class="text">Healthy Food</div>
+            </div>
+
+            <div class="item">
+              <img src="https://media.istockphoto.com/id/1158623408/photo/indian-hindu-veg-thali-food-platter-selective-focus.jpg?s=612x612&w=0&k=20&c=MOm3sfIfL22URV6juSCxpA3yfr4O63yJUV5vitufR7Y=" alt="">
+              <div class="text">Thali</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCuJy69l2kA9d8pddtKObu3_h9JllCKIEvw&s" alt="">
+              <div class="text">Pasta</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrGRldd0n-Oup0HjIagz4Et46QVCbI1vxjA&s" alt="">
+              <div class="text">Cookies</div>
+            </div>
+
+            <div class="item">
+              <img src="https://png.pngtree.com/png-vector/20240519/ourlarge/pngtree-two-delicious-spring-rolls-png-image_12495806.png" alt="">
+              <div class="text">Rolls</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7DbKibZHxZmXQeNLc0iPe0V3UAFITibHGkflHEfcOjHWGm4tiBBkrJ2e9c6XlcWAquh0&usqp=CAU" alt="">
+              <div class="text">Maccroni</div>
+            </div>
+
+            <div class="item">
+              <img src="https://static.toiimg.com/photo/98230357.cms" alt="">
+              <div class="text">Chole Bhature</div>
+            </div>
+
+            <div class="item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQA9kwuKW7V7IwbPAjgD_x7hZo3B84wbVPQ1xZLUE9HrPUVcALXJnnu4aMLbBjXaUJ-mQ&usqp=CAU" alt="">
+              <div class="text">South Indian</div>
+            </div>
+
+            <div class="item">
+              <img src="https://img-global.cpcdn.com/recipes/4e6759e54cbfedc2/1200x630cq70/photo.jpg" alt="">
+              <div class="text">North Indian</div>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="button" onclick="slideLeft()">&#10094;</button>
+            <button class="button" onclick="slideRight()">&#10095;</button>
+        </div>
+
+        </section>
+
+        <section class="item-hero">
+            <div class="items-contain">
+              <div class="heading">
+                <h2>Popular Foods</h2>
+              </div>
+              <table id="item-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="card">
+                                  <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg" alt="Pancakes" class="card-image">
+                                  <div class="card-details">
+                                    <h2>Classic Pancakes</h2>
+                                    <span class="price">₹90</span>
+                                  </div>
+                                  <p class="description">Start your day with a stack of fluffy pancakes ser....</p>
+                                  <div class="card-footer">
+                                    <span class="rating">
+                                      <i data-feather="star"></i>
+                                      4.5
+                                    </span>
+                                    <button class="add-to-cart">Add to cart</button>
+                                  </div>
+                                </div>
+                         </td>
+
+                         <td>
+                          <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFK3x8OPw7fs_3grtSwUaemcNEszEh2r8fg&s" alt="Pancakes" class="card-image">
+                                <div class="card-details">
+                                  <h2>Chole Bhature</h2>
+                                  <span class="price">₹180</span>
+                                </div>
+                                <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                                <div class="card-footer">
+                                  <span class="rating">
+                                    <i data-feather="star"></i>
+                                    4.5
+                                  </span>
+                                  <button class="add-to-cart">Add to cart</button>
+                                </div>
+                              </div>
+                       </td>
+
+                       <td>
+                        <div class="card">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRfpZB0_3qGRT0vx7Jlw662goIgQc9en4esg&s" alt="Pasta" class="card-image">
+                              <div class="card-details">
+                                <h2>Classic Pasta</h2>
+                                <span class="price">₹150</span>
+                              </div>
+                              <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                              <div class="card-footer">
+                                <span class="rating">
+                                  <i data-feather="star"></i>
+                                  4.5
+                                </span>
+                                <button class="add-to-cart">Add to cart</button>
+                              </div>
+                            </div>
+                     </td>
+
+                     <td>
+                      <div class="card">
+                            <img src="../All Images/Order Page Images/fruit.png" alt="Pancakes" class="card-image">
+                            <div class="card-details">
+                              <h2>Oats Bowl</h2>
+                              <span class="price">₹90</span>
+                            </div>
+                            <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                            <div class="card-footer">
+                              <span class="rating">
+                                <i data-feather="star"></i>
+                                4.5
+                              </span>
+                              <button class="add-to-cart">Add to cart</button>
+                            </div>
+                          </div>
+                   </td>
+
+                   <td>
+                    <div class="card">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5okG0tz2dWr36k2p9gxbFmqoM4AeW1e3pPQ&s" alt="Pancakes" class="card-image">
+                          <div class="card-details">
+                            <h2>Burger with Fries</h2>
+                            <span class="price">₹160</span>
+                          </div>
+                          <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                          <div class="card-footer">
+                            <span class="rating">
+                              <i data-feather="star"></i>
+                              4.5
+                            </span>
+                            <button class="add-to-cart">Add to cart</button>
+                          </div>
+                        </div>
+                 </td>
+                      </tr>
+
+                      <!-- second row -->
+
+                      <tr>
+                        <td>
+                          <!-- choco lava cake -->
+                            <div class="card">
+                                  <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chocolate-molten-cakes-37a25eb.jpg" alt="Pancakes" class="card-image">
+                                  <div class="card-details">
+                                    <h2>Choco Lava Cake</h2>
+                                    <span class="price">₹110</span>
+                                  </div>
+                                  <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                                  <div class="card-footer">
+                                    <span class="rating">
+                                      <i data-feather="star"></i>
+                                      4.5
+                                    </span>
+                                    <button class="add-to-cart">Add to cart</button>
+                                  </div>
+                                </div>
+                         </td>
+
+                         <td>
+                          <div class="card">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKjSyBMREoNn3UU00Wb-Ma3VH6FiT8HgMvow&s" alt="Pancakes" class="card-image">
+                                <div class="card-details">
+                                  <h2>Candy Dips</h2>
+                                  <span class="price">₹130</span>
+                                </div>
+                                <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                                <div class="card-footer">
+                                  <span class="rating">
+                                    <i data-feather="star"></i>
+                                    4.5
+                                  </span>
+                                  <button class="add-to-cart">Add to cart</button>
+                                </div>
+                              </div>
+                       </td>
+
+                       <td>
+                        <div class="card">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnJIqGvitJTUIZAMTjh4NQo5PVPJvMWd4Sog&s" alt="Pancakes" class="card-image">
+                              <div class="card-details">
+                                <h2>Pastry</h2>
+                                <span class="price">₹85</span>
+                              </div>
+                              <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                              <div class="card-footer">
+                                <span class="rating">
+                                  <i data-feather="star"></i>
+                                  4.5
+                                </span>
+                                <button class="add-to-cart">Add to cart</button>
+                              </div>
+                            </div>
+                     </td>
+
+                     <td>
+                      <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN5IaGrtoE8LEvPckTD4DHI-jwDyhx4qScgA&s" alt="Pancakes" class="card-image">
+                            <div class="card-details">
+                              <h2>Combo Meal</h2>
+                              <span class="price">₹80</span>
+                            </div>
+                            <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                            <div class="card-footer">
+                              <span class="rating">
+                                <i data-feather="star"></i>
+                                4.5
+                              </span>
+                              <button class="add-to-cart">Add to cart</button>
+                            </div>
+                          </div>
+                   </td>
+
+                   <td>
+                    <div class="card">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTjrI--y5Aut6Kfn8lX7VwaXAtxJ-X0hpmg&s" alt="Pancakes" class="card-image">
+                          <div class="card-details">
+                            <h2>Chocolate Cake</h2>
+                            <span class="price">₹450</span>
+                          </div>
+                          <p class="description">Start your day with a stack of fluffy pancakes ser...</p>
+                          <div class="card-footer">
+                            <span class="rating">
+                              <i data-feather="star"></i>
+                              4.5
+                            </span>
+                            <button class="add-to-cart">Add to cart</button>
+                          </div>
+                        </div>
+                 </td>
+                      </tr>
+
+                   </tbody>
+               </table>
+              </div>
+            </div>
+        </section>
+
+        <!-- optional just keep it for check -->
+        <section class="live-heading">
+          <div class="live-cont">
+          <div class="live-text">
+            <p>Nachos are</p>
+            <p>
+              <span class="word wisteria">tasty.</span>
+              <span class="word belize">wonderful.</span>
+              <span class="word pomegranate">fancy.</span>
+              <span class="word green">beautiful.</span>
+              <span class="word midnight">cheap.</span>
+            </p>
+          </div>
+        </div>
+        </section>
+
+
+        <section class="restaurant-hero">
+          <div class="restaurant-contain">
+            <div class="heading">
+              <h2>Popular Restaurants</h2>
+            </div>
+            <table id="restaurant-table">
+              <tbody>
+                  <tr>
+                      <td>
+                          <div class="restaurant">
+                                <img src="../All Images/Order Page Images/4925df0169254d36473f3557c47c4257_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                                <div class="restaurant-details">
+                                  <h2>Khadak Singh Da Dhaba</h2>
+                                  <span class="rating">
+                                    <i data-feather="star"></i>
+                                    4.5
+                                  </span>
+                                </div>
+                                <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                                <div class="restaurant-footer">
+                                    <p>₹150 per person</p>
+                                    <p>27 min</p>
+
+                                </div>
+                              </div>
+                       </td>
+                       
+                       <td>
+                        <div class="restaurant">
+                              <img src="../All Images/Order Page Images/3be38d2e4f70d288ef36e9e0f0577616_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                              <div class="restaurant-details">
+                                <h2>Khadak Singh Da Dhaba</h2>
+                                <span class="rating">
+                                  <i data-feather="star"></i>
+                                  4.5
+                                </span>
+                              </div>
+                              <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                              <div class="restaurant-footer">
+                                  <p>₹150 per person</p>
+                                  <p>27 min</p>
+
+                              </div>
+                            </div>
+                     </td>
+
+                     <td>
+                      <div class="restaurant">
+                            <img src="../All Images/Order Page Images/2b44f5f85208e5ddd40c5f5b8e8cec23_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                            <div class="restaurant-details">
+                              <h2>Khadak Singh Da Dhaba</h2>
+                              <span class="rating">
+                                <i data-feather="star"></i>
+                                4.5
+                              </span>
+                            </div>
+                            <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                            <div class="restaurant-footer">
+                                <p>₹150 per person</p>
+                                <p>27 min</p>
+
+                            </div>
+                          </div>
+                   </td>
+
+                  </tr>
+                  <tr>
+
+                    <td>
+                      <div class="restaurant">
+                            <img src="../All Images/Order Page Images/b8584757e3dd7aaf4942104dc6ff8add_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                            <div class="restaurant-details">
+                              <h2>Khadak Singh Da Dhaba</h2>
+                              <span class="rating">
+                                <i data-feather="star"></i>
+                                4.5
+                              </span>
+                            </div>
+                            <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                            <div class="restaurant-footer">
+                                <p>₹150 per person</p>
+                                <p>27 min</p>
+
+                            </div>
+                          </div>
+                   </td>
+
+                   <td>
+                    <div class="restaurant">
+                          <img src="../All Images/Order Page Images/eeceb6b37200a6f510d9b1406f5ad220_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                          <div class="restaurant-details">
+                            <h2>Khadak Singh Da Dhaba</h2>
+                            <span class="rating">
+                              <i data-feather="star"></i>
+                              4.5
+                            </span>
+                          </div>
+                          <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                          <div class="restaurant-footer">
+                              <p>₹150 per person</p>
+                              <p>27 min</p>
+
+                          </div>
+                        </div>
+                 </td>
+                 
+                 <td>
+                  <div class="restaurant">
+                        <img src="../All Images/Order Page Images/f3d84183e40019427c4d8e241ab01869_o2_featured_v2.jpg" alt="Pancakes" class="restaurant-image">
+                        <div class="restaurant-details">
+                          <h2>Khadak Singh Da Dhaba</h2>
+                          <span class="rating">
+                            <i data-feather="star"></i>
+                            4.5
+                          </span>
+                        </div>
+                        <p class="restaurant-description">North Indian, Chinese, Fast Food,Beverages, Chinese, Fast Food,Beverages.</p>
+                        <div class="restaurant-footer">
+                            <p>₹150 per person</p>
+                            <p>27 min</p>
+
+                        </div>
+                      </div>
+               </td>
+                    </tr>
+
+                 </tbody>
+             </table>
+            </div>
+          </div>
+      </section>
+        
+    </main>
+
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script> feather.replace(); </script>
+
+    <!-- internal -->
+    <script src="./orderpageslider.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./order_live-heading.js"></script>
+    <script src="./loading.js"></script>
+
+
+  </body>
+</html>

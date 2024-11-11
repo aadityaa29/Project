@@ -1,0 +1,51 @@
+.live-cont {
+  background: #243642;
+  width: 95%;
+  margin: 2% auto;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.live-heading {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-text {
+  width: 100%;
+  max-width: 450px; /* Limits width to prevent overflow */
+  text-align: center;
+  position: relative;
+}
+
+.live-text p {
+  display: inline-block;
+  font-size: 40px; /* Adjusted font size for better fit */
+  color: white;
+  white-space: nowrap; /* Keeps text on one line */
+  overflow: hidden;
+}
+
+.word {
+  display: inline-block;
+  font-size: 40px; /* Adjusted font size for better fit */
+  opacity: 0;
+  animation: fadeIn 5s infinite;
+}
+
+@keyframes fadeIn {
+  0%, 20% { opacity: 1; } /* Control fade-in timing */
+  80%, 100% { opacity: 0; }
+}
+
+.wisteria { color: #8e44ad; }
+.belize { color: #2980b9; }
+.pomegranate { color: #c0392b; }
+.green { color: #16a085; }
+.midnight { color: #2c3e50; }

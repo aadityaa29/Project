@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./forgot.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-contain">
+        <h1><a href="../index.html">Crave Cart</a></h1>
+        <p>Discover Best Food Near Your Location</p>
+      </div>
+      <div class="contain">
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          class="forgot-email"
+          required
+        />
+        <button class="forgot-btn">Get New Password</button>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector(".forgot-btn");
+      const emailInput = document.querySelector(".forgot-email");
+
+      function handleEmailSubmission() {
+        const email = emailInput.value;
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+        if (email === "") {
+          alert("Please enter a valid email address.");
+        } else if (!emailPattern.test(email)) {
+          alert("Invalid email format. Please enter a correct email address.");
+        } else {
+          alert(`A password reset link has been sent to ${email}`);
+        }
+      }
+
+      btn.addEventListener("click", handleEmailSubmission);
+
+      emailInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          btn.click();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+
+}
+.contain{
+    background-color: white;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    padding: 10px 20px;
+    margin: 15% auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-email{
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    /* border-radius: 4px; */
+    background-color: transparent;
+    margin: 10% auto;
+    padding: 5px 5px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.forgot-btn{
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    background-color: rgb(29, 201, 29);
+    cursor: pointer;
+    padding: 10px 10px;
+    color: #fff
+    
+}
+.forgot-btn:hover{
+    color: black
+}
+.forgot-email::placeholder{
+    color: rgb(181, 104, 9);
+}
+
+.heading-contain a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.heading-contain h1{
+    color: #fff;
+    font-size: 85px;
+    text-align: center;
+    margin-top: 9%;
+    margin-bottom: -13%;
+}
+.heading-contain p {
+    text-align: center;
+    color: #fff;
+    margin-top: 12.5%;
+    font-size: 19.5px;
+    margin-bottom: -13%;
+}

@@ -1,0 +1,68 @@
+.menu-hero{
+    /* background-color: #F2E5BF; */
+    width: 95%;
+    height: 200px;
+    margin: 2% auto;
+    padding: 10px 40px;
+    overflow: hidden;
+    position: relative;
+
+}
+.items
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* padding: ; */
+    width: 300px;
+    border-radius: 10px;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+.item {
+    min-width: 200px;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.item img
+{
+    width: 180px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(0, 0, 0);
+    transition: transform 0.5s ease-in-out;
+}
+.item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+.text
+{
+    color: black;
+    font-size: 25px;
+    margin-top: 9px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 95%;
+    transform: translateY(-50%);
+    /* transform: translateX(-50%); */
+}
+
+.button {
+    background-color: rgba(6, 20, 225, 0.568);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}

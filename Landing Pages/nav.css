@@ -1,0 +1,63 @@
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.nav{
+    width: 80%;
+    display: flex;
+    font-weight: 200;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    user-select: none;
+    padding: 1.7rem 0px;
+    color: #fff;
+
+
+}
+
+ .nav-element {
+    color: white;
+    padding-bottom: 1rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px 0px 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.nav-element a{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 900;
+
+}
+.nav-element a:hover{
+    color: blue;
+}
+
+.nav .nav-right
+{
+    display: flex;
+}
+
+.nav .nav-right .nav-element a {
+    color: black;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding: 0.8rem;
+}
+
+.nav .nav-right .nav-element a:hover{
+    color: blue;
+}
+
+
+
+

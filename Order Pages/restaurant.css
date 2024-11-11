@@ -1,0 +1,100 @@
+.restaurant-hero{
+    /* background-color: #FD8B51; */
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* card css */
+
+.restaurant{
+    font-weight: bold;
+    width: 350px;
+    height: 360px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 8px;
+  }
+  
+  .restaurant:hover{
+    box-shadow: 10px 10px #b7030374;
+    /* border: 1px solid black; */
+  }
+  .restaurant-image {
+    width: auto;
+    height: 185px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .restaurant-details {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+  }
+  .restaurant-details h2{
+    text-wrap: nowrap;
+    text-overflow:ellipsis;
+    max-width: 80%;
+  }
+  
+  
+  .restaurant-description {
+    padding: 0px;
+    text-align:left;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .restaurant-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+  }
+  .restaurant-footer p{
+    font-size: 15px;
+  }
+  
+  .rating {
+    padding: 7.3px 7.3px;
+    background-color: #22c55e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+
+  }
+.rating svg{
+    padding-right: 3px;
+    padding-bottom: 3px;
+    width: 18px;
+    height: 18px;
+}
+
+.add-to-cart:hover {
+    background-color: #16a34a;
+}
+
+td{
+    padding: 10px 10px;
+}
+
+.heading h2 {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
